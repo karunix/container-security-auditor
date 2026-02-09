@@ -1,1 +1,2 @@
 from .container_user import check_container_running_as_root
+from .privileged import check_privileged_container
