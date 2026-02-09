@@ -20,14 +20,13 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
+         - name: Debug workspace
         run: |
-          python -m venv .venv
-          source .venv/bin/activate
-          pip install --upgrade pip
-          pip install pytest
-          pip install -e .
+          pwd
+          ls -la
+          ls -la tests || echo "tests directory missing"
 
       - name: Run tests
         run: |
           source .venv/bin/activate
-          pytest tests
+          pytest -vv tests
