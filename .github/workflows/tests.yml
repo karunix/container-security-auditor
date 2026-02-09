@@ -2,9 +2,9 @@ name: CI
 
 on:
     push:
-        branches: [ "main" ]
+        branches: ["main"]
         pull_request:
-            branches: [ "main" ]
+            branches: ["main"]
 
             jobs:
                 tests:
@@ -25,6 +25,7 @@ on:
                                     source .venv/bin/activate
                                     pip install --upgrade pip
                                     pip install pytest
+                                    pip install -e .
 
                                     - name: Run tests
                                     run: |
