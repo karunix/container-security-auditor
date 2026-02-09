@@ -20,7 +20,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-         - name: Debug workspace
+      - name: Debug workspace
         run: |
           pwd
           ls -la
