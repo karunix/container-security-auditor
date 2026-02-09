@@ -1,6 +1,0 @@
-[project]
-name = "container-security-auditor"
-version = "0.1.0"
-description = "Deterministic security checks for container runtime misconfigurations"
-requires-python = ">=3.10"
-
